@@ -13,6 +13,11 @@ const App = () => {
     title: 'New TV',
     price: 100.99,
     },
+    { 
+    date: new Date(2023, 10, 2),
+    title: 'New PC',
+    price: 2000,
+    },
   ]
   
 

@@ -1,15 +1,15 @@
 import './Expenses.css';
 import ExpenseItem from './ExpenseItem';
-import ExpenseDate from './ExpenseDate';
 
 const Expenses = (props) => {
     console.log(props);
     return (
         <div className='expenses'>
-            
-            <ExpenseItem data={props.expenseData}></ExpenseItem>
+            {props.expenseData.map((expense, index) => (
+                <ExpenseItem key={index} data={expense}></ExpenseItem>
+            ))}
         </div>
-    )
+    );
 }
 
 export default Expenses;
